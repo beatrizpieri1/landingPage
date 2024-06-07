@@ -11,7 +11,6 @@ const menuLateral = document.getElementById("menuLateral")
 const btnMenu = document.getElementById("btnMenu")
 const btnClose = document.getElementById("btnClose")
 
-
 btnHome.addEventListener("click", function(){
     window.location.href = "#telaInicial"
 })
@@ -39,6 +38,8 @@ btnMenu.addEventListener("click", function(){
 btnClose.addEventListener("click", function(){
     menuLateral.style.display = "none";
 })
+
+
 
     
  document.getElementById('whats').addEventListener('click', function() {
