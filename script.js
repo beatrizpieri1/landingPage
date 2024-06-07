@@ -11,7 +11,17 @@ const menuLateral = document.getElementById("menuLateral")
 const btnMenu = document.getElementById("btnMenu")
 const btnClose = document.getElementById("btnClose")
 
+// NAVEGAÇÃO
+const home = document.getElementById("home")
+const sobre = document.getElementById("sobre")
+const projetos = document.getElementById("projetos")
+const contato = document.getElementById("contato")
+
+
 btnHome.addEventListener("click", function(){
+    window.location.href = "#telaInicial"
+})
+home.addEventListener("click", function(){
     window.location.href = "#telaInicial"
 })
 
@@ -23,11 +33,21 @@ btnSobre.addEventListener("click", function(){
     window.location.href = "#telaSobre"
 })
 
+sobre.addEventListener("click", function(){
+    window.location.href = "#telaSobre"
+})
+
 btnProjetos.addEventListener("click", function(){
+    window.location.href = "#telaProjetos"
+})
+projetos.addEventListener("click", function(){
     window.location.href = "#telaProjetos"
 })
 
 btnContato.addEventListener("click", function(){
+    window.location.href = "#telaContato"
+})
+contato.addEventListener("click", function(){
     window.location.href = "#telaContato"
 })
 

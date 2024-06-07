@@ -13,7 +13,7 @@
 </head>
 <body class="bg-purple-50">
     <!-- INICIO HEADER -->
-    <header class="w-full mt-10">
+    <header class="w-full mt-0 fixed top-0 bg-purple-50 h-11 ">
        
 
         <!--  MENU LATERAL -->
@@ -51,20 +51,28 @@
           
         <!-- MENU -->
            
-            <button  id="btnMenu" class="md:hidden"><i class="fa-solid fa-bars text-[25px] mr-3"></i></button>
+            <button  id="btnMenu" class="md:hidden"><i class="fa-solid fa-bars text-[25px]"></i></button>
           
         <!-- MENU -->
+           
+                <ul id="info" class="hidden md:flex gap-5 uppercase cursor-pointer font-semibold">
 
-            <div id="info" class="hidden md:flex gap-5 uppercase cursor-pointer font-semibold">
+                    <li class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">
+                        <a id="home">home</a>
+                      </li>
+                      <li  id="sobre" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">
+                        <a>sobre</a>
+                      </li>
+                      <li class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">
+                        <a id="projetos">projetos</a>
+                      </li>
+                      <li class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">
+                         <a id="contato">contato</a>
+                      </li>
                 
-                <h3 id="btnHome" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Home</h3>
-
-                <h3 id="btnSobre" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Sobre</h3>
-
-                <h3 id="btnProjetos" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Projetos</h3>
-
-                <h3 id="btnContato" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Contato</h3>
-            </div>
+            </ul>
+            
+         
             
         </div>
     </header>
