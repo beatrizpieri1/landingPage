@@ -11,6 +11,7 @@ const menuLateral = document.getElementById("menuLateral")
 const btnMenu = document.getElementById("btnMenu")
 const btnClose = document.getElementById("btnClose")
 
+
 btnHome.addEventListener("click", function(){
     window.location.href = "#telaInicial"
 })
@@ -38,3 +39,17 @@ btnMenu.addEventListener("click", function(){
 btnClose.addEventListener("click", function(){
     menuLateral.style.display = "none";
 })
+
+    
+ document.getElementById('whats').addEventListener('click', function() {
+    var phoneNumber = '5514991302204';
+    var message = 'Olá, gostaria de saber mais sobre seus projetos'; 
+    var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+    window.location.href = whatsappURL;
+});
+
+document.getElementById('insta').addEventListener('click', function() {
+    var instagramURL = 'https://www.instagram.com/_biapieri?igsh=bzE0dTNiNmoyeDFt'; 
+    window.location.href = instagramURL;
+});
+
