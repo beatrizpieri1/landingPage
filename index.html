@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script.js" defer></script>
+    
 
 </head>
 <body class="bg-purple-50">
@@ -15,42 +17,46 @@
        
 
         <!--  MENU LATERAL -->
-        <div class="fixed top-0 right-0 h-[50vh] w-52 bg-white p-4 rounded-bl-[50px] shadow-md hidden">
+   
+        <div id="menuLateral" class="fixed top-0 right-0 h-[50vh] w-52 bg-white p-4 rounded-bl-[50px] shadow-md hidden">
 
-            <ul class="list-none float-right text-2xl uppercase font-semibold">
+            <ul class="list-none float-right text-2xl uppercase font-semibold mt-10">
             <li class="py-2 px-4 mb-5 mt-2">
-              <a href="#" class="text-purple-500">home</a>
+              <a id="btnHome" class="text-purple-500">home</a>
             </li>
             <li class="py-2 px-4 mb-5">
-              <a href="#" class="text-purple-500">sobre</a>
+              <a id="btnSobre" class="text-purple-500">sobre</a>
             </li>
             <li class="py-2 px-4 mb-5">
-              <a href="#" class="text-purple-500">projetos</a>
+              <a id="btnProjetos" class="text-purple-500">projetos</a>
             </li>
             <li class="py-2 px-4">
-               <a href="#" class="text-purple-500">contato</a>
+               <a id="btnContato" class="text-purple-500">contato</a>
             </li>
           </ul>
-        </div>          
-        </div>
 
+        </div>          
+      
+ </div>
         <!-- FIM MENU LATERAL-->
 
-        <div class="container mx-auto px-4 flex justify-between items-center">
+        <div id="portifolio" class="container mx-auto px-4 flex justify-between items-center">
             <h1 class="font-semibold text-4xl text-black hover:scale-105 ease-out duration-300 hover:text-purple-500 cursor-pointer">Meu Portfólio</h1>
           
-            <!-- MENU -->
-            <div id="menu"></div>
-            <div class="hidden">
-            <button id="btnMenu"><i class="fa-solid fa-bars text-[25px] mr-3 "></i></button>
-            </div>
-            <!-- MENU -->
+        <!-- MENU -->
+           
+            <button  id="btnMenu" class="md:hidden"><i class="fa-solid fa-bars text-[25px] mr-3"></i></button>
+          
+        <!-- MENU -->
 
             <div id="info" class="hidden md:flex gap-5 uppercase cursor-pointer font-semibold">
-                <h3 id="home" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Home</h3>
-                <h3 id="sobre" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Sobre</h3>
-                <h3 id="projetos" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Projetos</h3>
-                <h3 id="contato" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Contato</h3>
+                <h3 id="btnHome" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Home</h3>
+
+                <h3 id="btnSobre" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Sobre</h3>
+
+                <h3 id="btnProjetos" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Projetos</h3>
+
+                <h3 id="btnContato" class="hover:text-purple-500 hover:text-[20px] ease-out duration-300">Contato</h3>
             </div>
             
         </div>
@@ -59,16 +65,15 @@
 
 
     <!-- INICIO HOME -->
-    <main class="mt-[15vh] px-4 ml-3 items-center">
+    <main id="telaInicial" class="mt-[15vh] px-4 ml-3 items-center">
         
-
-        <div id="Home" class="container mx-auto cursor-default">
+        <section class="container mx-auto cursor-default">
             <h1 class="text-5xl font-semibold">Eu me chamo <span class="text-purple-500">Beatriz</span>, e sou <span class="text-purple-500">desenvolvedora UX&UI</span> </h1>
 
             <p class="mt-3 font-medium text-[15px] tracking-widest uppercase justify-start md: mr-3">Oi! Sou uma desenvolvedora web que trabalha com JavaScript e Node.js. Uso Tailwind CSS para criar sites e aplicativos responsivos. <br>
             Também tenho experiência com bancos de dados como MySQL e SQL Server. <br>
             Vamos construir algo juntos?</p>
-        </div>
+        </section>
         <button id="go" class="text-2xl mt-5 text-white font-medium bg-gradient-to-r from-purple-500 to-purple-400 w-44 h-12 rounded-full shadow-sm hover:shadow-lg hover:scale-105 ease-out duration-300">
             Vamos!
           </button>
@@ -79,11 +84,11 @@
 
     <!-- INICIO SOBRE -->
 
-    <div id="sobre">
+    <section id="telaSobre">
         <h1 class="text-5xl mt-[15vh] mb-10 font-semibold cursor-default text-purple-500">Sobre mim</h1>
 
         <p class="mt-3 font-medium text-[15px] tracking-widest uppercase justify-start mb-10">Olá! Sou formada no ensino médio técnico em Desenvolvimento de Sistemas pela ETEC, onde adquiri experiência em desenvolvimento de sites, aplicativos e bancos de dados, além de habilidades em linguagem C. Meu inglês é intermediário. Estou motivada a contribuir para o crescimento da sua empresa como desenvolvedora júnior e continuamente aprimorar minhas habilidades.</p>
-    </div>
+    </section>
     <div class="w-full h-1 bg-purple-300 mt-[20vh] mb-11"></div>
 
    <!-- FIM SOBRE -->
@@ -92,7 +97,7 @@
 
    <!-- INICIO PROJETOS -->
 
-   <div id="projetos" class="">
+   <section id="telaProjetos" class="">
 
     <h1 class="text-5xl mt-[15vh] mb-10 font-semibold cursor-default text-purple-500">Veja alguns dos meus projetos</h1>
 
@@ -103,13 +108,13 @@
       <a href="https://github.com/beatrizpieri1" title="GitHub">
         <button class="mt-6 font-medium text-[25px] tracking-widest uppercase justify-start mb-10 text-white hover:scale-95 ease-in duration-100 bg-gradient-to-r from-purple-500 to-purple-400 w-44 h-12 rounded-full  ">meu git</button></a>
     </p>
-   </div>
+   </section>
    <div class="w-full h-1 bg-purple-300 mt-[20vh] mb-11"></div>
   <!-- FIM PROJETOS -->
 
   
   <!-- INICIO CONTATOS -->
-  <div id="contatos">
+  <section id="telaContato">
 
     <h1 class="text-5xl mt-[15vh] mb-10 font-semibold cursor-default text-purple-500">Fale comigo!</h1>
 
@@ -126,9 +131,9 @@
         <i class="fa-brands fa-instagram text-pink-600 text-[40px] cursor-pointer mb-10"></i>
     </div>
     </div>
-    </div>
-    
+    </section>
  <!-- FIM CONTATOS -->
     </main>
+    
 </body>
 </html>
